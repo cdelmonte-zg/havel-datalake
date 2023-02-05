@@ -1,0 +1,144 @@
+# YAML Document starts with ---
+# Comments start with #
+
+apiVersion: v1
+sources:
+    hr-dataset:
+        hrd:
+            url: /sample-data/hr-dataset/hrd
+            datasets:
+                - HRDataset_v14:
+                  name: HRDataset_v14
+                  keywords_whitelist: 
+                    - city
+                    - addressline
+                  columns_blacklist:
+                    - modifieddate
+                - HRDataset_generated:
+                  name: HRDataset_generated
+                  keywords_whitelist: 
+                    - city
+                    - addressline
+                  columns_blacklist:
+                    - modifieddate
+                    - rowguid
+    adventureworks-for-postgres:
+        person:
+            url: /sample_data/adventureworks-for-postgres
+            datasets: 
+                - address:
+                  name: address
+                  keywords_whitelist: 
+                    - city
+                    - addressline
+                  columns_blacklist:
+                    - modifieddate
+                    - rowguid
+                - addresstype:
+                  name: addresstype
+                  keywords_whitelist: 
+                    - name
+                  columns_blacklist:
+                    - modifieddate
+                    - rowguid
+                - businessentity:
+                  name: businessentity
+                  columns_blacklist:
+                    - modifieddate
+                    - rowguid
+                - businessentityaddress:
+                  name: businessentityaddress
+                  columns_blacklist:
+                    - modifieddate
+                    - rowguid
+                - businessentitycontact:
+                  name: businessentitycontact
+                  columns_blacklist:
+                    - modifieddate
+                    - rowguid
+                - contacttype:
+                  name: contacttype
+                  keywords_whitelist: 
+                    - name
+                  columns_blacklist:
+                    - modifieddate
+                    - rowguid
+                - countryregion:
+                  name: countryregion
+                  keywords_whitelist: 
+                    - name
+                  columns_blacklist:
+                    - modifieddate
+                    - rowguid
+                - emailaddress:
+                  name: emailaddress
+                  keywords_whitelist: 
+                    - emailaddress
+                - password:
+                  name: password
+                  keywords_whitelist: 
+                    - password
+                  columns_blacklist:
+                    - modifieddate
+                    - rowguid
+                - person:
+                  name: person
+                  keywords_whitelist: 
+                    - firstname
+                    - middlename
+                    - lastname
+                  columns_blacklist:
+                    - modifieddate
+                - personphone:
+                  name: personphone
+                  keywords_whitelist: 
+                    - phonenumber
+                  columns_blacklist:
+                    - modifieddate
+                    - rowguid
+                - phonenumbertype:
+                  name: phonenumbertype
+                  keywords_whitelist: 
+                    - name
+                  columns_blacklist:
+                    - modifieddate
+                    - rowguid
+                - stateprovince:
+                  name: stateprovince
+                  keywords_whitelist: 
+                    - stateprovincecode
+                    - countryregioncode
+                    - name
+                  columns_blacklist:
+                    - modifieddate
+                    - rowguid
+                - vadditionalcontactinfo:
+                  name: vadditionalcontactinfo
+                  keywords_whitelist: 
+                    - usinessentityid
+                    - rstname
+                    - middlename
+                    - lastname
+                    - telephonenumber
+                    - telephonespecialinstructions
+                    - street
+                    - city
+                    - stateprovince
+                    - postalcode
+                    - countryregion
+                    - homeaddressspecialinstructions
+                    - emailaddress
+                    - emailspecialinstructions
+                    - emailtelephonenumber
+                  columns_blacklist:
+                    - modifieddate
+                    - rowguid
+                - address_2:
+                  name: address_2
+                  keywords_whitelist: 
+                    - city
+                    - addressline
+                  columns_blacklist:
+                    - modifieddate
+                    - rowguid
+        
