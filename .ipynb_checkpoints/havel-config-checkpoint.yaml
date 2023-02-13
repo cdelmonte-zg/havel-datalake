@@ -4,141 +4,159 @@
 apiVersion: v1
 sources:
     hr-dataset:
-        hrd:
-            url: /sample-data/hr-dataset/hrd
-            datasets:
-                - HRDataset_v14:
-                  name: HRDataset_v14
-                  keywords_whitelist: 
-                    - city
-                    - addressline
-                  columns_blacklist:
-                    - modifieddate
-                - HRDataset_generated:
-                  name: HRDataset_generated
-                  keywords_whitelist: 
-                    - city
-                    - addressline
-                  columns_blacklist:
-                    - modifieddate
-                    - rowguid
+        version: 1 
+        name: hrd
+        description: > 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper vel felis nec faucibus. In malesuada lacus ut fermentum malesuada. Praesent sed feugiat lorem, quis tincidunt dui. Fusce imperdiet est quis arcu semper cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ac semper neque. Ut ac dictum dolor. Sed venenatis ante sed elit lobortis, quis egestas velit varius. Nulla vehicula nisl eget interdum rhoncus. Curabitur a velit nisi. Suspendisse dapibus turpis vitae rhoncus pretium. Nunc vulputate urna fringilla ullamcorper mattis. In viverra, magna pellentesque sollicitudin convallis, libero elit vehicula dolor, quis posuere mauris neque ut velit.
+            Vivamus vehicula tellus vestibulum sollicitudin posuere. Nullam nec lorem a felis sollicitudin faucibus a id sapien. Mauris metus ipsum, molestie eu sem eget, iaculis aliquet quam. Integer ut interdum neque. Nullam felis enim, pellentesque ut ipsum non, dapibus imperdiet est. Sed fringilla mollis ligula vel eleifend. Integer faucibus sapien ac accumsan efficitur. Vivamus eget pharetra urna. Quisque luctus lobortis risus quis lobortis.
+
+            Suspendisse sed maximus felis, vitae viverra sapien. Pellentesque nec sapien velit. Sed accumsan ipsum felis, at tempus ante tempus at. Sed malesuada finibus mauris, a consectetur velit suscipit sit amet. Sed et justo quis orci convallis faucibus. In hendrerit viverra eros non volutpat. In eleifend laoreet libero, quis laoreet elit lobortis venenatis. Proin sagittis lorem in lorem convallis placerat.
+
+            Nullam id odio vitae risus aliquet vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel mi at tellus viverra accumsan. Nunc non metus rutrum, tempor ex quis, accumsan est. Fusce ac purus ullamcorper, scelerisque felis quis, lacinia ante. Donec bibendum accumsan hendrerit. Nam non varius sapien. Duis sit amet metus purus. Proin at arcu ultrices, lobortis quam in, faucibus metus. Curabitur vulputate pharetra turpis sit amet pulvinar.
+
+            Etiam placerat turpis et mauris tincidunt pretium. Curabitur maximus odio eget metus molestie euismod. Fusce pharetra ultricies consectetur. Maecenas mauris odio, pretium a ligula et, consectetur dictum urna. Vivamus viverra auctor lacus, at rutrum urna suscipit nec. Mauris pellentesque dapibus arcu, eget posuere dui hendrerit a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia quam at magna vulputate, rhoncus congue neque auctor. Pellentesque volutpat massa velit. Ut vitae lorem ultricies, faucibus eros ac, vulputate erat. Aliquam erat volutpat. Maecenas interdum sollicitudin lorem at consectetur. Aenean sit amet sapien eget arcu laoreet efficitur. In sed placerat odio. Quisque sollicitudin, augue egestas ultrices dictum, nulla tellus dictum libero, quis maximus enim felis ut leo.
+        url: /sample-data/hr-dataset/hrd
+        datasets:
+            - HRDataset_v14:
+              name: HRDataset_v14
+              description: > 
+                  Etiam placerat turpis et mauris tincidunt pretium. Curabitur maximus odio eget metus molestie euismod. Fusce pharetra ultricies consectetur. Maecenas mauris odio, pretium a ligula et, consectetur dictum urna. Vivamus viverra auctor lacus, at rutrum urna suscipit nec. Mauris pellentesque dapibus arcu, eget posuere dui hendrerit a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia quam at magna vulputate, rhoncus congue neque auctor. Pellentesque volutpat massa velit. Ut vitae lorem ultricies, faucibus eros ac, vulputate erat. Aliquam erat volutpat. Maecenas interdum sollicitudin lorem at consectetur. Aenean sit amet sapien eget arcu laoreet efficitur. In sed placerat odio. Quisque sollicitudin, augue egestas ultrices dictum, nulla tellus dictum libero, quis maximus enim felis ut leo.
+              keywords_whitelist: 
+                - city
+                - addressline
+              attributes_blacklist:
+                - modifieddate
+            - HRDataset_generated:
+              name: HRDataset_generated
+              keywords_whitelist: 
+                - city
+                - addressline
+              attributes_blacklist:
+                - modifieddate
+                - rowguid
     adventureworks-for-postgres:
-        person:
-            url: /sample_data/adventureworks-for-postgres
-            datasets: 
-                - address:
-                  name: address
-                  keywords_whitelist: 
-                    - city
-                    - addressline
-                  columns_blacklist:
-                    - modifieddate
-                    - rowguid
-                - addresstype:
-                  name: addresstype
-                  keywords_whitelist: 
-                    - name
-                  columns_blacklist:
-                    - modifieddate
-                    - rowguid
-                - businessentity:
-                  name: businessentity
-                  columns_blacklist:
-                    - modifieddate
-                    - rowguid
-                - businessentityaddress:
-                  name: businessentityaddress
-                  columns_blacklist:
-                    - modifieddate
-                    - rowguid
-                - businessentitycontact:
-                  name: businessentitycontact
-                  columns_blacklist:
-                    - modifieddate
-                    - rowguid
-                - contacttype:
-                  name: contacttype
-                  keywords_whitelist: 
-                    - name
-                  columns_blacklist:
-                    - modifieddate
-                    - rowguid
-                - countryregion:
-                  name: countryregion
-                  keywords_whitelist: 
-                    - name
-                  columns_blacklist:
-                    - modifieddate
-                    - rowguid
-                - emailaddress:
-                  name: emailaddress
-                  keywords_whitelist: 
-                    - emailaddress
-                - password:
-                  name: password
-                  keywords_whitelist: 
-                    - password
-                  columns_blacklist:
-                    - modifieddate
-                    - rowguid
-                - person:
-                  name: person
-                  keywords_whitelist: 
-                    - firstname
-                    - middlename
-                    - lastname
-                  columns_blacklist:
-                    - modifieddate
-                - personphone:
-                  name: personphone
-                  keywords_whitelist: 
-                    - phonenumber
-                  columns_blacklist:
-                    - modifieddate
-                    - rowguid
-                - phonenumbertype:
-                  name: phonenumbertype
-                  keywords_whitelist: 
-                    - name
-                  columns_blacklist:
-                    - modifieddate
-                    - rowguid
-                - stateprovince:
-                  name: stateprovince
-                  keywords_whitelist: 
-                    - stateprovincecode
-                    - countryregioncode
-                    - name
-                  columns_blacklist:
-                    - modifieddate
-                    - rowguid
-                - vadditionalcontactinfo:
-                  name: vadditionalcontactinfo
-                  keywords_whitelist: 
-                    - usinessentityid
-                    - rstname
-                    - middlename
-                    - lastname
-                    - telephonenumber
-                    - telephonespecialinstructions
-                    - street
-                    - city
-                    - stateprovince
-                    - postalcode
-                    - countryregion
-                    - homeaddressspecialinstructions
-                    - emailaddress
-                    - emailspecialinstructions
-                    - emailtelephonenumber
-                  columns_blacklist:
-                    - modifieddate
-                    - rowguid
-                - address_2:
-                  name: address_2
-                  keywords_whitelist: 
-                    - city
-                    - addressline
-                  columns_blacklist:
-                    - modifieddate
-                    - rowguid
-        
+        description: >
+            Nullam id odio vitae risus aliquet vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel mi at tellus viverra accumsan. Nunc non metus rutrum, tempor ex quis, accumsan est. Fusce ac purus ullamcorper, scelerisque felis quis, lacinia ante. Donec bibendum accumsan hendrerit. Nam non varius sapien. Duis sit amet metus purus. Proin at arcu ultrices, lobortis quam in, faucibus metus. Curabitur vulputate pharetra turpis sit amet pulvinar.
+
+                Etiam placerat turpis et mauris tincidunt pretium. Curabitur maximus odio eget metus molestie euismod. Fusce pharetra ultricies consectetur. Maecenas mauris odio, pretium a ligula et, consectetur dictum urna. Vivamus viverra auctor lacus, at rutrum urna suscipit nec. Mauris pellentesque dapibus arcu, eget posuere dui hendrerit a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia quam at magna vulputate, rhoncus congue neque auctor. Pellentesque volutpat massa velit. Ut vitae lorem ultricies, faucibus eros ac, vulputate erat. Aliquam erat volutpat. Maecenas interdum sollicitudin lorem at consectetur. Aenean sit amet sapien eget arcu laoreet efficitur. In sed placerat odio. Quisque sollicitudin, augue egestas ultrices dictum, nulla tellus dictum libero, quis maximus enim felis ut leo.
+        version: 1 
+        name: person
+        url: /sample_data/adventureworks-for-postgres
+        datasets: 
+            - address:
+              name: address
+              description: > 
+                  Etiam placerat turpis et mauris tincidunt pretium. Curabitur maximus odio eget metus molestie euismod. Fusce pharetra ultricies consectetur. Maecenas mauris odio, pretium a ligula et, consectetur dictum urna. Vivamus viverra auctor lacus, at rutrum urna suscipit nec. Mauris pellentesque dapibus arcu, eget posuere dui hendrerit a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia quam at magna vulputate, rhoncus congue neque auctor. Pellentesque volutpat massa velit. Ut vitae lorem ultricies, faucibus eros ac, vulputate erat. Aliquam erat volutpat. Maecenas interdum sollicitudin lorem at consectetur. Aenean sit amet sapien eget arcu laoreet efficitur. In sed placerat odio. Quisque sollicitudin, augue egestas ultrices dictum, nulla tellus dictum libero, quis maximus enim felis ut leo.
+              keywords_whitelist: 
+                - city
+                - addressline
+              attributes_blacklist:
+                - modifieddate
+                - rowguid
+            - addresstype:
+              name: addresstype
+              keywords_whitelist: 
+                - name
+              attributes_blacklist:
+                - modifieddate
+                - rowguid
+            - businessentity:
+              name: businessentity
+              attributes_blacklist:
+                - modifieddate
+                - rowguid
+            - businessentityaddress:
+              name: businessentityaddress
+              attributes_blacklist:
+                - modifieddate
+                - rowguid
+            - businessentitycontact:
+              name: businessentitycontact
+              attributes_blacklist:
+                - modifieddate
+                - rowguid
+            - contacttype:
+              name: contacttype
+              keywords_whitelist: 
+                - name
+              attributes_blacklist:
+                - modifieddate
+                - rowguid
+            - countryregion:
+              name: countryregion
+              keywords_whitelist: 
+                - name
+              attributes_blacklist:
+                - modifieddate
+                - rowguid
+            - emailaddress:
+              name: emailaddress
+              keywords_whitelist: 
+                - emailaddress
+            - password:
+              name: password
+              keywords_whitelist: 
+                - password
+              attributes_blacklist:
+                - modifieddate
+                - rowguid
+            - person:
+              name: person
+              keywords_whitelist: 
+                - firstname
+                - middlename
+                - lastname
+              attributes_blacklist:
+                - modifieddate
+            - personphone:
+              name: personphone
+              keywords_whitelist: 
+                - phonenumber
+              attributes_blacklist:
+                - modifieddate
+                - rowguid
+            - phonenumbertype:
+              name: phonenumbertype
+              keywords_whitelist: 
+                - name
+              attributes_blacklist:
+                - modifieddate
+                - rowguid
+            - stateprovince:
+              name: stateprovince
+              keywords_whitelist: 
+                - stateprovincecode
+                - countryregioncode
+                - name
+              attributes_blacklist:
+                - modifieddate
+                - rowguid
+            - vadditionalcontactinfo:
+              name: vadditionalcontactinfo
+              keywords_whitelist: 
+                - usinessentityid
+                - rstname
+                - middlename
+                - lastname
+                - telephonenumber
+                - telephonespecialinstructions
+                - street
+                - city
+                - stateprovince
+                - postalcode
+                - countryregion
+                - homeaddressspecialinstructions
+                - emailaddress
+                - emailspecialinstructions
+                - emailtelephonenumber
+              attributes_blacklist:
+                - modifieddate
+                - rowguid
+            - address_2:
+              name: address_2
+              keywords_whitelist: 
+                - city
+                - addressline
+              attributes_blacklist:
+                - modifieddate
+                - rowguid
