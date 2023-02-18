@@ -1,0 +1,2 @@
+dataset,related_nodes_by_signature,related_nodes_by_content
+adventureworks-for-postgres.person.address,[],['adventureworks-for-postgres.person.address.addressid -> adventureworks-for-postgres.person.businessentityaddress.addressid']

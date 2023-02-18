@@ -1,0 +1,2 @@
+dataset,related_nodes_by_signature,related_nodes_by_content
+adventureworks-for-postgres.person.address,"[('adventureworks-for-postgres-person-address_2', 'adventureworks-for-postgres', 'person', 'address_2', '//sample-data/adventureworks-for-postgres/person/address_2__2022-11-20.csv', 4)]","['adventureworks-for-postgres.person.address_2.spatiallocation -> adventureworks-for-postgres.person.address.spatiallocation', 'adventureworks-for-postgres.person.address_2.postalcode -> adventureworks-for-postgres.person.address.postalcode']"
