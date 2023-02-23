@@ -254,7 +254,7 @@ sources:
                   name: vadditionalcontactinfo
                   keywords_whitelist: 
                     - usinessentityid
-                    - rstname
+                    - firstname
                     - middlename
                     - lastname
                     - telephonenumber
