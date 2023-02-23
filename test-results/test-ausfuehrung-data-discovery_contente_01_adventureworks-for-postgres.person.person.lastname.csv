@@ -1,15 +1,14 @@
 a,b
 lastname,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=person \linebreak a=lastname}
-emailpromotion,{s=hr-dataset \linebreak b=hrd \linebreak d=HRDataset-v14 \linebreak a=MarriedID}
+emailpromotion,{s=hr-dataset \linebreak b=hrd \linebreak d=HRDataset-v14 \linebreak a=Termd}
 emailpromotion,{s=hr-dataset \linebreak b=hrd \linebreak d=HRDataset-v14 \linebreak a=FromDiversityJobFairID}
-emailpromotion,{s=hr-dataset \linebreak b=hrd \linebreak d=HRDataset-v14 \linebreak a=GenderID}
+emailpromotion,{s=hr-dataset \linebreak b=hrd \linebreak d=HRDataset-v14 \linebreak a=MarriedID}
 middlename,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=vadditionalcontactinfo \linebreak a=middlename}
 firstname,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=vadditionalcontactinfo \linebreak a=firstname}
-namestyle,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=stateprovince \linebreak a=isonlystateprovinceflag}
-businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=personphone \linebreak a=businessentityid}
-businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=businessentity \linebreak a=businessentityid}
-businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=emailaddress \linebreak a=businessentityid}
 businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=vadditionalcontactinfo \linebreak a=businessentityid}
-businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=password \linebreak a=businessentityid}
-businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=businessentityaddress \linebreak a=businessentityid}
 businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=emailaddress \linebreak a=emailaddressid}
+businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=businessentity \linebreak a=businessentityid}
+businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=personphone \linebreak a=businessentityid}
+businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=businessentityaddress \linebreak a=businessentityid}
+businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=password \linebreak a=businessentityid}
+businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=emailaddress \linebreak a=businessentityid}

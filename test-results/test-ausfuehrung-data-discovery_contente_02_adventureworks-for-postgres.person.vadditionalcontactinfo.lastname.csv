@@ -3,7 +3,7 @@ lastname,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=vadditi
 firstname,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=person \linebreak a=firstname}
 businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=emailaddress \linebreak a=emailaddressid}
 businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=emailaddress \linebreak a=businessentityid}
+businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=personphone \linebreak a=businessentityid}
 businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=businessentity \linebreak a=businessentityid}
 businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=password \linebreak a=businessentityid}
-businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=personphone \linebreak a=businessentityid}
 businessentityid,{s=adventureworks-for-postgres \linebreak b=person \linebreak d=person \linebreak a=businessentityid}
